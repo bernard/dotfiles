@@ -1,0 +1,16 @@
+Host 192.168.254.*
+        user bernard
+        KeepAlive yes
+Host rapidxen.n0rth.net
+        User bernard
+        Port 443
+        KeepAlive yes
+Host *.n0rth.net
+        User bernard
+        KeepAlive yes
+Host 174.143.212.225
+	user root
+	KeepAlive yes
+Host *
+        User bernard
+        KeepAlive yes
