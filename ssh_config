@@ -1,14 +1,14 @@
 Host 192.168.254.*
         user bernard
         KeepAlive yes
-Host rapidxen.n0rth.net
+Host xxx.xxx.xxx.xxx
         User bernard
         Port 443
         KeepAlive yes
-Host *.n0rth.net
+Host *.x0xxx.xxx
         User bernard
         KeepAlive yes
-Host 174.143.212.225
+Host xxx.xxx.xxx.xxx
 	user root
 	KeepAlive yes
 Host *
