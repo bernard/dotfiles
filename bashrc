@@ -19,7 +19,9 @@ fi
 
 # SET Colors
 export TERM=xterm-color
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+#export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export GREP_COLOR='1;32'
+alias grep='grep --color=auto'
 export CLICOLOR=1 
 
 if [ "$OS" = "linux" ] ; then
