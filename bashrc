@@ -223,6 +223,11 @@ if [ -f ~/.bashrc_local ]; then
   source ~/.bashrc_local
 fi
 
+# Misc Alias
+alias whatsmyip='curl http://ipinfo.io'
+
+# VPN
+alias vpn-do='sudo openvpn --config /home/bolducb/etc/vpn/DO/client.ovpn'
 
 
 # Test 
