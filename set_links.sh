@@ -43,3 +43,9 @@ else
    echo "Symlink .ssh/config already exist"
 fi
 
+if [ ! -h "${HOME}/.vimrc" ]; then
+   ln -s ${HOME}/etc/vimrc ${HOME}/.vimrc
+   echo "Symlink .vimrc created"
+else
+   echo "Symlink .vimrc already exist"
+fi

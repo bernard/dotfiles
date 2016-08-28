@@ -12,5 +12,5 @@ Host xxx.xxx.xxx.xxx
 	user root
 	KeepAlive yes
 Host *
-        User bernard
+        User bolducb
         KeepAlive yes
