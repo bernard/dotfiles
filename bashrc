@@ -22,7 +22,7 @@ export TERM=xterm-color
 #export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export GREP_COLOR='1;32'
 alias grep='grep --color=auto'
-export CLICOLOR=1 
+export CLICOLOR=1
 
 if [ "$OS" = "linux" ] ; then
   alias ls='ls --color=auto'
@@ -61,7 +61,7 @@ export HISTCONTROL=ignoredups
 export HISTFILESIZE=3000
 export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll:lla"
 alias h=history
-hf(){ 
+hf(){
   grep "$@" ~/.bash_history
 }
 
@@ -122,7 +122,7 @@ if [ $IS_INTERACTIVE = 'true' ] ; then # Interactive shell only
 
   function xtitle {  # change the title of your xterm* window
     unset PROMPT_COMMAND
-    echo -ne "\033]0;$1\007" 
+    echo -ne "\033]0;$1\007"
   }
 
 fi
@@ -132,11 +132,11 @@ fi
 # Navigation and Directory HACK
 alias ..='cd ..'
 alias ...='cd .. ; cd ..'
-cl() { cd $1; ls -la; } 
+cl() { cd $1; ls -la; }
 
 # save directory as tags http://www.macosxhints.com/article.php?story=20020716005123797
 # to add a tag:
-#     in directory type: 
+#     in directory type:
 #     save <tag>
 # you can now move to this directory tag by:
 #     cd <tag>
@@ -147,9 +147,9 @@ fi
 
 alias show='cat ~/.dirs'
 save (){
-  command sed "/!$/d" ~/.dirs > ~/.dirs1; \mv ~/.dirs1 ~/.dirs; echo "$@"=\"`pwd`\" >> ~/.dirs; source ~/.dirs ; 
+  command sed "/!$/d" ~/.dirs > ~/.dirs1; \mv ~/.dirs1 ~/.dirs; echo "$@"=\"`pwd`\" >> ~/.dirs; source ~/.dirs ;
 }  #"
-source ~/.dirs  # Initialization for the above 'save' facility: source the .sdirs file 
+source ~/.dirs  # Initialization for the above 'save' facility: source the .sdirs file
 shopt -s cdable_vars # set the bash option so that no '$' is required when using the above facility
 
 
@@ -171,7 +171,7 @@ fi
 # Security
 # Notes, hardly used
 # Folder shared by a group
-# chmod g+s directory 
+# chmod g+s directory
 #find /foo -type f -print | xargs chmod g+rw,o-rwx,u+rw
 #find /foo -type d -print | xargs chmod g+rwxs,o-rwx,u+rwx
 
@@ -229,8 +229,11 @@ alias whatsmyip='curl http://ipinfo.io'
 # VPN
 alias vpn-do='sudo openvpn --config /home/bolducb/etc/vpn/DO/client.ovpn'
 
+# ipinfo
+alias ipinfo='curl ipinfo.io'
 
-# Test 
+
+# Test
 #if [ "$OS" = "linux" ] ; then
 #elif
 #else

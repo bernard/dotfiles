@@ -3,7 +3,7 @@ syntax enable
 set smartindent
 set autoindent
 filetype on
-filetype plugin on
+filetype plugin indent on
 
 set shiftwidth=2
 set tabstop=2
@@ -39,3 +39,10 @@ endif
 
 " dont use a tempfile for crons
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+colorscheme kalisi
+"set background=light
+" or
+set background=dark
+" if you don't set the background, the light theme will be used
+
