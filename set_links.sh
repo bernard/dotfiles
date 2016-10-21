@@ -45,6 +45,7 @@ fi
 
 if [ ! -h "${HOME}/.vimrc" ]; then
    ln -s ${HOME}/etc/vimrc ${HOME}/.vimrc
+   ln -s ${HOME}/etc/vimrc ${HOME}/.config/nvim/init.vim
    echo "Symlink .vimrc created"
 else
    echo "Symlink .vimrc already exist"
