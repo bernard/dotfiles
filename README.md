@@ -2,6 +2,8 @@ This is my own Unix dot files setup.
 
 Works on any Unix flavor and is OSX compatible.
 
+Adding some script to support my personal Qubes-OS setup
+
 This environment was tweak by me and modified from different sources.
 
 I would like to name those sources but as this was done more than a year ago, I don't actually remember where they where all taken.
